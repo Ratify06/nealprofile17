@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neal's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/df4a0453c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="./images/LOGO.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                 <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">EXPERIENCE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fa-solid fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p class="small">MULTIMEDIA ARTIST & IT</p>
+            <h1>Hello, There It's <span>Neal</span> <br>your IT student and Multimedia Artist friend. </h1>
+        </div>
+    </div></div>
+</div>
+<!-- -----------about----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/cap.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="me">ABOUT ME</h1>
+                <P class="about-me-1">HI I'm Neal Carlo R. Songcuya a multi media artist and I've
+                     graduated at university of southern <br>philippines davao city
+                </P>
+                <div class="tab-titles">
+                 <p class="tab-links active-link" onclick="opntab('SKILLS')">SKILLS </p>
+                 <p class="tab-links " onclick="opntab('EXPERIENCE')">EXPERIENCE </p>
+                 <p class="tab-links " onclick="opntab('EDUCATION')">EDUCATION </p>
+                </div>
+                 <div class="tab-contents active-tab" id="SKILLS">
+                        <ul>
+                            <li><span>UI/UX</span><br>Interface Designer</li>
+                            <li><span>MULTIMEDIA ARTS</span><br>Graphic Design, Film Maker,<br>Illustrator, Layout Artist</li>
+                            <li><span>WEB DEVELOPMENT</span><br>Web Developing</li>
+                        </ul>
+                    </div>
+                 <div class="tab-contents" id="EXPERIENCE">
+                        <ul>
+                            <li><span>2025</span><br>UI/UX Training at NobleProg center Davao</li>
+                            <li><span>2027</span><br>Graphic Designer Freelancer</li>
+                        </ul>
+                    </div>
+                 <div class="tab-contents" id="EDUCATION">
+                        <ul>
+                            <li><span>2027</span><br>BMMA at USEP Davao</li>
+                            <li><span>2033</span><br>BSIT at UM Matina</li>
+                        
+                        </ul>
+                    </div>
+                 </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------services------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title.one">MY SERVICES</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2 class="heading-1-2">UI/UX</h2>
+                <p class="main-text-1">UI or user Interface and UX which means user experience is the kind of Job
+                    which focuses on the user experiences of the audience and user.
+                </p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-square-plus"></i>
+                <h2 class="heading-2-2">Layout Designer,Graphic Design</h2>
+                <p class="main-text-2">We designers are graphic artists who specialize in page composition. <br>
+                     We work with graphic designers to determine the ideal layout for <br> printed pages and screens.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------portfolio--------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">WORK</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/images/Believer by tohdraws on DeviantArt.jpg">
+                <div class="layer">
+                    <h3>
+                         Graphic Designer
+                    </h3>
+                    <p> I am person who create graphical images or arts considering and following
+                        the wants of my clients</p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/images/Animator designer in creative.jpg">
+               <div class="layer">
+                <h3>
+                    Graphic Designer
+                </h3>
+                <p> I am person who create graphical images or arts considering and following
+                the wants of my clients</p>
+                <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+               </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- --------contact-------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-titleone">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope-open"></i> nealcarlosongcuya17@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+639494000266</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/nealcarlo.reyessongcuya"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/frkn.sneal/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/cv_neal.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright © 2023 by Neal Carlo Songcuya All rights reserved</p>
+</div>
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opntab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+
+</script>
+
+</body>
+</html>

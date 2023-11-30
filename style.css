@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color:rgb(13, 14, 13);
+    height: 100vh;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/gingsa.jpg);
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 65px;
+    padding-inline-start: 20px 10%;
+    border-radius: 5.0px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    font-family: arial;
+}
+
+nav ul li :hover{
+    color: rgb(114, 194, 49);
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color:rgb(114, 194, 49);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s;
+}
+ nav ul li a:hover::after{
+    width: 100%;
+ }
+
+ .header-text{
+    margin-top: 10%;
+    font-size: 30px;
+
+ }
+
+ .header-text h1{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+ }
+
+ .header-text h1 span{
+    color: rgb(75, 129, 41);
+    font-size: larger;
+ }
+
+ .small{
+    padding: 15px;
+    font-family: arial;
+ }
+/* ------about----------- */
+#about{
+    padding: 80px 0;
+    color:black;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about-col-1{
+    flex-basis: 45%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 div{
+    flex-basis: 60%;
+
+}
+
+.me{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: verdana;
+    color: rgb(45, 65, 29);
+    width: 67%;
+    margin-top: 15px;
+
+}
+
+.about-me-1{
+    font-size: 20px;
+    margin: 15px 0;
+    font-family: verdana;
+    color: black;
+    margin-bottom: 45px;
+
+}
+
+.tab-titles{
+    display: flex;
+    margin: 50px 0 40px;
+    font-family: serif;
+    margin-top: 15px;
+    size: 58px;
+
+}
+
+
+.tab-links{
+    margin-right: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    font-family: sans-serif;
+    color:black;
+    border-radius: 4px;
+    background-clip: content-box;
+
+}
+
+.tab-titles :hover{
+    color: rgb(114, 194, 49);
+}
+
+.tab-links::after{
+    content:'';
+    width: 5px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: helvetica;
+}
+
+.tab-link.active-link::after{
+    width: 70%;
+
+}
+ 
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-family: arial;
+    font-weight: 100;
+    font-size: larger;
+}
+
+.tab-contents ul li span{
+    color: rgb(114, 194, 49);
+    font-size: 15px;
+    font-family: arial;
+    font-weight: 900;
+    margin-top: 30px;
+    
+
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* ----------------services----------------- */
+
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 65px;
+    margin-top: 40px;
+    font-family: monospace;
+    font-weight: 100;
+    font-family: arial;
+}
+
+.sub-title.one h1{
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 50px;
+    margin-left: 0;
+    font-weight: 100PX;
+    color: black;
+
+}
+.main-text-1{
+    font-family: arial;
+    color: white;
+    
+}
+.main-text-2{
+    font-family: arial;
+    color: white;
+}
+
+.sub-title{
+    font-family: verdana;
+    font-weight: bolder;
+    font-size: 40PX;
+    margin-left: 0;
+    color: rgb(47, 90, 47);
+}
+
+.fa-solid fa-square-plus{
+    color: black;
+    size: 30%;
+}
+.services-list div{
+    background: rgb(75, 119, 40);
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 30;
+    border-radius: 15px;
+    border-width: 50px;
+    transition: background 0.5s, transform 0.5s;
+
+}
+
+.services-list div I{
+    font-size: 35px;
+    margin-bottom: 13px;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover{
+    background: rgb(46, 43, 29);
+    transform: translateY(-15px);
+}
+
+/* --------portfolio------- */
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 65px;
+    margin-top: 40px;
+}
+.work{
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(transparent,rgb(75, 119, 40));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 900;
+    margin-bottom: 25px;
+    font-family: sans-serif;
+    color: black;
+}
+
+.layer p{
+    color: white;
+    font-family: sans-serif;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: black;
+    font-size: 43px;
+    height: 60px;
+    background: rgb(241, 238, 238);
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.4);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 5px;
+    text-decoration: white;
+    color: white;
+    background-color: gray;
+    size: 25px;
+
+}
+
+.btn:hover{
+    background:rgb(114, 194, 49);
+}
+/* -----------contact---------------- */
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+
+}
+
+.contact-left p i{
+    color: black;
+    margin-right: 15px;
+    font-size: 25px;
+
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: rgb(172, 166, 166);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color:rgb(114, 194, 49);
+    transform: translateY(-5px) ;
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: gray;
+}
+
+.btn.btn2:hover{
+   background-color:rgb(114, 194, 49) ;
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+form btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: rgb(75, 119, 40);
+    font-weight: 300;
+    margin-top: 20px;
+    height: 15;
+    color: white;
+}
+/* ------------------css for small screens--------------- */
+nav .fa-solid{
+    display: none;
+}
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/gingsa.jpg);
+        height: 100vh;
+        width: 100%;
+        
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+        
+    }
+        .header-text h1{
+            font-size: 30px;
+            
+        }
+        nav .fa-solid{
+            display: block;
+            font-size: 28px;
+        }
+        nav ul {
+            background: linear-gradient(transparent, rgb(114, 194, 49));
+            position: fixed;
+            top: 0;
+            right: -200px;
+            width: 200px;
+            height: 100vh;
+            padding-top: 50px;
+            border-radius: 15px;
+            border-bottom-right-radius: 15px;
+            z-index: 2;
+            transition: right 0.6s;
+            
+        }
+        nav ul li{
+            display: block;
+            margin: 45px;
+            height: fit-content;
+
+        }
+        nav ul .fa-solid{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: crosshair;
+        }
+        #portfolio
+        .work-list{
+            display:block ;
+            font-size: 15px;
+            margin-top: 25px;
+            width: 320px;
+            border-spacing: 25px;
+            position: absolute;
+        }
+        .layer{
+            font-size: small;
+            margin-top: 15%;
+            size: 1px;
+        }
+        
+
+
+}
+
+@media only screen and (max-width: 600px){
+    .services-list{
+        display: block;
+        size-adjust:25px;
+        width: 360px;
+        max-width: fit-content;
+        
+}
+
+}
+
+@media only screen and (max-width: 600px){
+    .about-col-1{
+        margin-bottom: 0;
+        font-size: large;
+        width: 500px;
+        size: 405px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    
+    .about-col-1{
+        margin-bottom: 60px;
+        margin-top: 30pxs;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    
+    }
